@@ -96,35 +96,6 @@ nav a {
     display: inline-block;
 }
 
-.search-content .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-
-.search-content .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #141414;
-    min-width: 160px;
-    width: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    transition: opacity 0.3s;
-}
-
-.search-content .icon-link:hover + .dropdown-content,
-.search-content .triangle:hover + .dropdown-content {
-    display: block;
-    opacity: 1; /* Show the dropdown with full opacity */
-}
-    
-
-.search-content .icon-link:hover .triangle,
-.search-content .triangle:hover {
-    transform: rotate(180deg); /* Rotate the triangle by 180 degrees */
-}
-
 .content {
     width: 100%;
     margin: 0;
