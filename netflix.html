@@ -37,9 +37,9 @@
         window.addEventListener('scroll', function() {
             const blackBar = document.querySelector('.black-bar');
             if (window.scrollY > 100) { // Adjust the scroll position where you want the bar to appear
-                blackBar.style.opacity = '1';
+                blackBar.style.backgroundColor = '#000'; // Make the black bar visible by changing its background color
             } else {
-                blackBar.style.opacity = '0';
+                blackBar.style.backgroundColor = 'transparent'; // Make the black bar background transparent when scrolling back up
             }
         });
     </script>
