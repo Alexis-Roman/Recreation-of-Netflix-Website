@@ -236,6 +236,10 @@ input[type="radio"]{
 .questions input[type="radio"]:checked + label::after{
     transform: rotate(45deg);
 }
+
+.faq small p{
+margin-bottom: 20px;
+}
 /* 
 .signup{
     background: white;
