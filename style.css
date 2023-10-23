@@ -158,6 +158,11 @@ nav button{
     margin: auto;
 }
 
+hr.solid{
+    border-top: 3px solid #282828;
+   border-bottom: 5px solid#282828;
+}
+
 /* 
 .signup{
     background: white;
