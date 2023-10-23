@@ -110,16 +110,25 @@ nav a {
     transform: translate(-90%, -50%);
     z-index: 1;
     text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff
+}
+
+.text-overlay-1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-87%, -50%);
+    z-index: 1;
+    text-align: justify;
+    color: #fff;
+    font-size: 14px;
 }
 
 .homeThumbnail {
     max-width: 100%;
     margin: 0;
     padding: 0;
-}
-
-p {
-    font-size: 100px;
-    color: #fff;
-    font-weight: bold;
 }
