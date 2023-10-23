@@ -18,6 +18,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s;
+    z-index: 2;
 }
 
 .header-content {
@@ -86,6 +87,44 @@ nav a {
     display: inline-block;
 }
 
+.triangle {
+    width: 10px !important;
+    height: auto !important;
+    margin: 10px !important ;
+    margin-top: 17px !important;
+    margin-left: 2px !important;
+    display: inline-block;
+}
+
+.search-content .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.search-content .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #141414;
+    min-width: 160px;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+.search-content .icon-link:hover + .dropdown-content,
+.search-content .triangle:hover + .dropdown-content {
+    display: block;
+    opacity: 1; /* Show the dropdown with full opacity */
+}
+    
+
+.search-content .icon-link:hover .triangle,
+.search-content .triangle:hover {
+    transform: rotate(180deg); /* Rotate the triangle by 180 degrees */
+}
+
 .content {
     width: 100%;
     margin: 0;
@@ -93,8 +132,23 @@ nav a {
     background-color: #141414;
 }   
 
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
 .homeThumbnail {
     max-width: 100%;
     margin: 0;
     padding: 0;
+}
+
+p {
+    font-size: 100px;
+    color: #fff;
+    font-weight: bold;
 }
