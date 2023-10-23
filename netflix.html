@@ -30,7 +30,18 @@
         
 
     <div class="content">
-
+        <img class="homeThumbnail" src="C:\Users\crllm\OneDrive\Desktop\Recreation-of-Netflix-Website\src\img\Dark Knight Thumbnail.jpg" alt="DarkKnight">
     </div> 
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const blackBar = document.querySelector('.black-bar');
+            if (window.scrollY > 100) { // Adjust the scroll position where you want the bar to appear
+                blackBar.style.opacity = '1';
+            } else {
+                blackBar.style.opacity = '0';
+            }
+        });
+    </script>
 </body>
 </html>
