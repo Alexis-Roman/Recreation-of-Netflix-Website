@@ -123,6 +123,41 @@ nav button{
     
 }
 
+/* -------------content-------------- */
+.content{
+    padding: 50px 10%;
+    font-size: 22px;
+}
+
+.row{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 50px 0; 
+}
+
+.text-in{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.text-in h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.image-in{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.image-in img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
 /* 
 .signup{
     background: white;
