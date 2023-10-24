@@ -247,3 +247,16 @@ nav a {
     margin-right: 10px;
     border-radius: 7px;
 }
+
+.newreleases-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.newreleases-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.newreleases-container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
