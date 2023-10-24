@@ -18,7 +18,8 @@
             <img src="images/netflix_logo.png" class="logo">
             <div>
                 <button class="language-btn"> <img src="images/language_btn.png">English <img src="images/dropdown_btn.png"></button>
-                <button> Sign In</button>
+                <button id="signInButton">Sign In</button>
+                
             </div>
         </nav>
         <!-- START of header content -->
@@ -241,3 +242,13 @@
     </div>
 </body>
 </html>
+<script>
+    // Get a reference to the "Sign In" button using its id
+    const signInButton = document.getElementById("signInButton");
+
+    // Add a click event listener to the button
+    signInButton.addEventListener("click", function() {
+        // Redirect to the next HTML page when the button is clicked
+        window.location.href = "login.html";
+    });
+</script>
