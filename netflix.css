@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: #141414;
 }
 
 .black-bar {
@@ -211,4 +212,34 @@ nav a {
     max-width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.thumbnail-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.thumbnail-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.thumbnail-scroll img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.thumbnail-container img {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
 }
