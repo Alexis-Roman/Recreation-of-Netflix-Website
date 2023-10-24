@@ -108,7 +108,7 @@ nav a {
 
 .text-overlay {
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-90%, -50%);
     z-index: 1;
@@ -122,7 +122,7 @@ nav a {
 .text-overlay-1 {
     font-family: 'Helvetica Neue', sans-serif;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-87%, -50%);
     z-index: 1;
@@ -219,7 +219,7 @@ nav a {
     color: #e5e5e5;
     font-family: 'Helvetica Neue', sans-serif;
     position: absolute;
-    top: 70%;
+    top: 90%;
     transform: translate( 60%, -50%);
     z-index: 1;
     text-align: justify;
@@ -230,19 +230,19 @@ nav a {
 
 .newreleases-container {
     position: absolute;
-    top: 72%;
+    top: 92%;
     width: 100%;
+    left: 5%;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     background-color: transparent;
     z-index: 1;
     overflow-x: auto;
-    height: 120px;
 }
 
 .newreleases-container img {
-    width: 300px;
+    width: 250px;
     height: auto;
     margin-right: 10px;
     border-radius: 7px;
