@@ -21,7 +21,7 @@
                 <input type="password">
                 <label>Password</label>
             </div>
-            <button>Sign In</button>
+            <button id="signInButton">Sign In</button>
             <div class="form-help">
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
@@ -38,24 +38,52 @@
     </div>
     <!-- FOOTER START HERE -->
     <div class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Questions? Contact us.</a>
+        <a href="#">Questions? Contact us.</a>
+
+        <div class="row">
+
+            <div class="btn-below">
                 <a href="#">FAQ</a>
-                <a href="#">Help Center</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy</a>
-            </div>
-            <div class="footer-links">
-                <a href="#">Cookie Preferences</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Ways to Watch</a>
                 <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
             </div>
-            <button class="language-btn">
-                <img src="images/language_btn.png"> English
-                <img src="images/dropdown_btn.png">
-            </button>
-            <p>Netflix Philippines</p>
+
+            <div class="btn-below">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="btn-below">
+                <a href="#">Account</a>
+                <a href="#">Redeem Gift Cards</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+
+            <div class="btn-below">
+                <a href="#">Media Center</a>
+                <a href="#">Buy Gift Cards</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
         </div>
+        <button class="language-btn"> <img src="images/language_btn.png">
+            English <img src="images/dropdown_btn.png"></button>
+            <p>Netflix Philippines</p>
     </div>
 </body>
 </html>
+<script>
+    // Get a reference to the "Sign In" button using its id
+    const signInButton = document.getElementById("signInButton");
+
+    // Add a click event listener to the button
+    signInButton.addEventListener("click", function() {
+        // Redirect to the next HTML page when the button is clicked
+        window.location.href = "login.html";
+    });
+</script>
