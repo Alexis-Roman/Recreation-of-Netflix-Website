@@ -113,7 +113,8 @@ nav a {
     text-align: justify;
     font-size: 102px;
     font-weight: bold;
-    color: #fff
+    color: #fff;
+    user-select: none;
 }
 
 .text-overlay-1 {
@@ -126,6 +127,7 @@ nav a {
     text-align: justify;
     color: #fff;
     font-size: 18px;
+    user-select: none;
 }
 
 .white-bar {
@@ -144,6 +146,7 @@ nav a {
     left: 0;
     border-radius: 7px;
     display: flex;
+    cursor: pointer;
 }
 
 .play-text {
