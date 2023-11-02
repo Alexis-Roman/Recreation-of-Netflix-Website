@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login Page</title>
+    <link rel="stylesheet" href="login_styles.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Sign In</h2>
+        <form action="netflix.html">
+            <div class="form-control">
+                <input type="text">
+                <label>Email or phone number</label>
+            </div>
+            <div class="form-control">
+                <input type="password">
+                <label>Password</label>
+            </div>
+            <button id="signInButton">Sign In</button>
+            <div class="form-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Need help?</a>
+            </div>
+        </form>
+        <p>New to Netflix? <a href="#">Sign up now</a></p>
+        <small>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot.
+            <a href="#">Learn more.</a>
+        </small>
+    </div>
+    <!-- FOOTER START HERE -->
+    <div class="footer">
+        <a href="#">Questions? Contact us.</a>
+
+        <div class="row">
+
+            <div class="btn-below">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+
+            <div class="btn-below">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="btn-below">
+                <a href="#">Account</a>
+                <a href="#">Redeem Gift Cards</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+
+            <div class="btn-below">
+                <a href="#">Media Center</a>
+                <a href="#">Buy Gift Cards</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+        </div>
+        <button class="language-btn"> <img src="images/language_btn.png">
+            English <img src="images/dropdown_btn.png"></button>
+            <p>Netflix Philippines</p>
+    </div>
+</body>
+</html>
+<script>
+    // Get a reference to the "Sign In" button using its id
+    const signInButton = document.getElementById("signInButton");
+
+    // Add a click event listener to the button
+    signInButton.addEventListener("click", function() {
+        // Redirect to the next HTML page when the button is clicked
+        window.location.href = "netflix.html";
+    });
+</script>
