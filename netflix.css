@@ -140,26 +140,35 @@ nav a {
 .icon-dropdown a img {
     width: 25px;
     height: auto;
-    margin-left: 30px;
+    margin-left: 0px;
+}
+
+.icon-dropdown li:nth-child(5) {
+    border-bottom: 1px solid #808080;
 }
 
 .icon-dropdown li:last-child {
-    border-bottom: none;
+    margin-left: 40px;
 }
 
 .icon-dropdown a {
     text-decoration: none;
     font-family: 'Helvetica Neue', sans-serif;
     color: #fff;
-    font-size: 10px;
+    font-size: 13px;
     display: flex;
     align-items: center;
+}
+
+.icon-dropdown a:hover {
+    text-decoration: underline;
+    background: transparent;
 }
 
 .dropdownicons {
     width: 25px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .icon-dropdown a:hover {
