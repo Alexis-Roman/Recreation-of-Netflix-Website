@@ -186,35 +186,41 @@
         const dropdown = document.querySelector('.icon-dropdown');
         const triangle = document.querySelector('.triangle');
         
-        let isHovering = false;
-
+        // Show the dropdown
         icon.addEventListener('mouseover', () => {
-            isHovering = true;
             dropdown.style.display = 'block';
             triangle.classList.add('rotated');
         });
 
+        // Hide the dropdown when not hovering
         icon.addEventListener('mouseout', () => {
             setTimeout(() => {
-                if (!isHovering) {
+                if (!dropdown.matches(':hover')) {
                     dropdown.style.display = 'none';
                     triangle.classList.remove('rotated');
                 }
             }, 100);
         });
 
-        dropdown.addEventListener('mouseover', () => {
-            isHovering = true;
-        });
-
+        // Hide the dropdown when unhovering from it
         dropdown.addEventListener('mouseout', () => {
-            isHovering = false;
             setTimeout(() => {
-                if (!isHovering) {
+                if (!icon.matches(':hover') && !dropdown.matches(':hover')) {
                     dropdown.style.display = 'none';
                     triangle.classList.remove('rotated');
                 }
             }, 100);
+        });
+
+        // Show the dropdown when hovering over the icon or triangle again
+        icon.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+            triangle.classList.add('rotated');
+        });
+
+        triangle.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+            triangle.classList.add('rotated');
         });
     </script>
     
