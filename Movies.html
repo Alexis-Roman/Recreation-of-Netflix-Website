@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="netflix.css">
     <title>NETFLIX</title>
@@ -41,33 +40,6 @@
         </div>
         <div class="search-bar" style="display: none;">
             <input type="text" id="search-input" placeholder="Search...">
-        </div>
-        <div class="icon-dropdown" style="display: none;">
-            <ul>
-                <li><a href="#">
-                    <img class="dropdownicons" src="src/img/smileglass.png" alt="icon">
-                    Profile
-                </a></li>
-                <li><a href="#">
-                    <img class="dropdownicons" src="src/img/smileglass.png" alt="icon">
-                    Manage Profiles
-                </a></li>
-                <li><a href="#">
-                    <img class="dropdownicons" src="src/img/smileglass.png" alt="icon">
-                    Transfer Profile
-                </a></li>
-                <li><a href="#">
-                    <img class="dropdownicons" src="src/img/smileglass.png" alt="icon">
-                    Account
-                </a></li>
-                <li><a href="#">
-                    <img class="dropdownicons" src="src/img/smileglass.png" alt="icon">
-                    Help Center
-                </a></li>
-                <li><a href="#">
-                    Sign out of Netflix
-                </a></li>
-            </ul>
         </div>
     </header>
         
@@ -170,33 +142,12 @@
     <script>
         window.addEventListener('scroll', function() {
             const blackBar = document.querySelector('.black-bar');
-            if (window.scrollY > 100) { 
-                blackBar.style.backgroundColor = '#141414'; 
+            if (window.scrollY > 100) { // Adjust the scroll position where you want the bar to appear
+                blackBar.style.backgroundColor = '#000'; // Make the black bar visible by changing its background color
             } else {
-                blackBar.style.backgroundColor = 'transparent';
+                blackBar.style.backgroundColor = 'transparent'; // Make the black bar background transparent when scrolling back up
             }
         });
     </script>
-    <script>
-        const icon = document.querySelector('.icon');
-        const dropdown = document.querySelector('.icon-dropdown');
-        const triangle = document.querySelector('.triangle');
-        
-        icon.addEventListener('mouseover', () => {
-            dropdown.style.display = 'block';
-            triangle.classList.add('rotated');
-        });
-        
-        icon.addEventListener('mouseout', () => {
-            dropdown.style.display = 'none';
-            triangle.classList.remove('rotated');
-        });
-        
-        // Hide the dropdown when the mouse leaves the dropdown itself
-        dropdown.addEventListener('mouseout', () => {
-            dropdown.style.display = 'none';
-        });
-    </script>
-    
 </body>
 </html>
