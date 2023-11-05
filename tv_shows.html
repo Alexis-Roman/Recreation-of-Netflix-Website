@@ -43,6 +43,31 @@
             <div class="search-bar" style="display: none;">
                 <input type="text" id="search-input" placeholder="Search...">
             </div>
+            
+            <!-- Drop down box -->
+            <div class="icon-dropdown" style="display: none;">
+                <ul>
+                    <li><a href="Profile.html">
+                        <img class="dropdownicons" src="src/img/smileglass.png" alt="icon">
+                        Profile
+                    </a></li>
+                    <li><a href="Manage.html">
+                        <img class="dropdownicons" src="images/pencil.png" alt="icon">
+                        Manage Profiles
+                    </a></li>
+                    <li><a href="Accounts.html">
+                        <img class="dropdownicons" src="images/user.png" alt="icon">
+                        Account
+                    </a></li>
+                    <li><a href="Help.html">
+                        <img class="dropdownicons" src="images/question.png" alt="icon">
+                        Help Center
+                    </a></li>
+                    <li><a href="login.html">
+                        Sign out of Netflix
+                    </a></li>
+                </ul>
+            </div>
         </header>
             
     
@@ -231,5 +256,60 @@
                 <img src="images/MyList/Mlist16.jpg" alt="" class="row__poster"/>                
             </div> 
         </div>    
+
+    <!-- Black Bar fade -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const blackBar = document.querySelector('.black-bar');
+            if (window.scrollY > 100) { 
+                blackBar.style.backgroundColor = '#141414'; 
+            } else {
+                blackBar.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+    <!-- Dropdown script -->
+    <script>
+        const icon = document.querySelector('.icon');
+        const dropdown = document.querySelector('.icon-dropdown');
+        const triangle = document.querySelector('.triangle');
+        
+        // Show the dropdown
+        icon.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+            triangle.classList.add('rotated');
+        });
+
+        // Hide the dropdown when not hovering
+        icon.addEventListener('mouseout', () => {
+            setTimeout(() => {
+                if (!dropdown.matches(':hover')) {
+                    dropdown.style.display = 'none';
+                    triangle.classList.remove('rotated');
+                }
+            }, 100);
+        });
+
+        // Hide the dropdown when unhovering from it
+        dropdown.addEventListener('mouseout', () => {
+            setTimeout(() => {
+                if (!icon.matches(':hover') && !dropdown.matches(':hover')) {
+                    dropdown.style.display = 'none';
+                    triangle.classList.remove('rotated');
+                }
+            }, 100);
+        });
+
+        // Show the dropdown when hovering over the icon or triangle again
+        icon.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+            triangle.classList.add('rotated');
+        });
+
+        triangle.addEventListener('mouseover', () => {
+            dropdown.style.display = 'block';
+            triangle.classList.add('rotated');
+        });
+    </script>
     </body>
 </html>

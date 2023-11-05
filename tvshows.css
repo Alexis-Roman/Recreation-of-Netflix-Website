@@ -73,6 +73,10 @@ body {
     margin-right: 25px;
 }
 
+nav {
+    display: flex;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -82,31 +86,47 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+nav li:nth-child(2) a {
+    font-weight: bold;
 }
 
 nav a {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
 }
 
 .search-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .search-content a {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    margin-left: -85px;
-    margin-right: 130px;
+    width: 20px;
+    height: 20px;
+    margin-top: -30px;
+    margin-right: 60px;
+    margin-left: -5px;
     cursor: pointer;
     background-color: transparent;
 }
@@ -122,16 +142,88 @@ nav a {
     margin: 0;
     padding: 0;
     display: inline-block;
+    border-radius: 5px;
 }
 
+/* Drop Down*/
+
+.icon-dropdown {
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    right: 80px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #808080;
+    display: flex;
+    z-index: 3;
+}
+
+.icon-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-dropdown li {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+}
+
+.icon-dropdown a img {
+    width: 25px;
+    height: auto;
+    margin-left: 0px;
+}
+
+.icon-dropdown li:nth-child(4) {
+    border-bottom: 1px solid #808080;
+}
+
+.icon-dropdown li:last-child {
+    margin-left: 40px;
+}
+
+.icon-dropdown a {
+    text-decoration: none;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.icon-dropdown a:hover {
+    text-decoration: underline;
+    background: transparent;
+}
+
+.dropdownicons {
+    width: 25px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.icon-dropdown a:hover {
+    background-color: #eee;
+}
+
+/* End of Dropdown */
 
 .triangle {
-    width: 10px !important;
-    height: auto !important;
+    width: 7px !important;
+    height: 5px !important;
     margin: 10px !important ;
-    margin-top: 17px !important;
+    margin-top: 22px !important;
     margin-left: 2px !important;
     display: inline-block;
+    transform: rotate(-180deg);
+    transition: transform 0.3s;
+}
+
+.rotated {
+    transform: rotate(0deg);
 }
 
 .content {
