@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    zoom: 80%;
 }
 
+/* Header */
 header {
     width: 100%;
     height: 90px;
@@ -36,7 +38,7 @@ header {
     font-weight: 700;
     color: #fff;
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Adjusted shadow values for visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 nav ul {
@@ -74,7 +76,7 @@ nav a {
 }
 
 .auth-buttons button.signin-btn:hover {
-    background-color: #D84315; /* Change the background color on hover */
+    background-color: #D84315;
 }
 
 .auth-buttons button.signup-btn {
@@ -91,5 +93,8 @@ nav a {
 }
 
 .auth-buttons button.signup-btn:hover {
-    background-color: rgba(240, 98, 5, 0.1); /* Change the background color on hover */
+    background-color: rgba(240, 98, 5, 0.1);
 }
+
+/* Content */
+
