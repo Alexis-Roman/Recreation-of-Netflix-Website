@@ -16,10 +16,18 @@ header {
     align-items: center;
 }
 
+.logo {
+    margin-left: 101px;
+}
+
 .logo img {
     width: 87px;
     height: 90px;
     display: block;
+}
+
+.Webtitle {
+    margin-left: -200px;
 }
 
 .Webtitle h1 {
@@ -39,7 +47,8 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px; /* Adjust the spacing between navigation items */
+    margin-right: 31px;
+
 }
 
 nav a {
@@ -50,15 +59,37 @@ nav a {
     font-family: 'Poppins', sans-serif;
 }
 
-.auth-buttons button {
-    background-color: white;
-    color: #08989F;
+.auth-buttons button.signin-btn {
+    margin-left: -150px;
+    margin-right: 22px;
+    background-color: #F06205;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    border-radius: 10px;
+    width: 102px;
+    height: 48px;
     cursor: pointer;
-    font-size: 16px; /* Adjust the font size of the buttons */
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.auth-buttons button:hover {
-    background-color: #ddd; /* Change the background color on hover */
+.auth-buttons button.signin-btn:hover {
+    background-color: #D84315; /* Change the background color on hover */
+}
+
+.auth-buttons button.signup-btn {
+    margin-right: 21px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 161px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-buttons button.signup-btn:hover {
+    background-color: rgba(240, 98, 5, 0.1); /* Change the background color on hover */
 }
