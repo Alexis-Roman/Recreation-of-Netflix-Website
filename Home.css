@@ -3,6 +3,22 @@ body {
     padding: 0;
     box-sizing: border-box;
     zoom: 80%;
+    overflow-x: hidden; 
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #606060 #f0f0f0; /* Firefox */
+}
+
+/* Webkit (Chrome, Safari) */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #606060;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
 }
 
 /* Header */
@@ -102,6 +118,8 @@ nav a {
     position: relative;
 }
 
+/* text */
+
 .welcome-text {
     position: absolute;
     top: 15%;
@@ -143,6 +161,78 @@ nav a {
     text-align: center;
 }
 
+.create-and {
+    width: 888px;
+    height: 135px;
+    position: absolute;
+    top: 210%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    color: #00757E; 
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    line-height: 127.5px;
+}
+
+.through-well {
+    width: 698px;
+    height: 120px;
+    position: absolute;
+    top: 255%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000; 
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+    line-height: 40px;
+}
+
+.engage-in {
+    width: 824px;
+    height: 135px;
+    position: absolute;
+    top: 374%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    color: #00757E; 
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    line-height: 127.5px;
+}
+
+.through2-well {
+    width: 698px;
+    height: 120px;
+    position: absolute;
+    top: 420%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000; 
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+    line-height: 40px;
+}
+
+/* button */
+
 .signin2-btn {
     width: 301px;
     height: 70px;
@@ -157,10 +247,88 @@ nav a {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     border: none;
     background-color: #F06205;
+    cursor: pointer;
 }
 
-.content img {
+button.signin2-btn:hover {
+    background-color: #D84315;
+}
+
+.signin3-btn {
+    width: 301px;
+    height: 70px;
+    position: absolute;
+    top: 280%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    border: none;
+    background-color: #F06205;
+    cursor: pointer;
+}
+
+button.signin3-btn:hover {
+    background-color: #D84315;
+}
+
+.signin4-btn {
+    width: 301px;
+    height: 70px;
+    position: absolute;
+    top: 447%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    border: none;
+    background-color: #F06205;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.signin4-btn:hover {
+    background-color: #D84315;
+}
+
+/* images */
+
+.bg1 {
     max-width: 100%;
     height: auto;
 }
 
+.c1 {
+    position: absolute;
+    top: 200%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
+
+.bg2 {
+    height: auto;
+    position: absolute;
+    top: 250%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+}
+
+.bg3 {
+    position: absolute;
+    top: 400%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.c2 {
+    position: absolute;
+    top: 405%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+}
